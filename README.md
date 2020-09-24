@@ -3,7 +3,9 @@ A Python function to perform disc/spheroid decomposition of simulated galaxies b
 
 # Python requirements
 Numpy: https://numpy.org
+
 Healpy: https://healpy.readthedocs.io/en/latest/
+
 Astropy: https://docs.astropy.org/en/stable/
 
 # Acknowledging and Citing
