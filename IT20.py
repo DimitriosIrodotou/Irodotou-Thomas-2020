@@ -45,8 +45,8 @@ def decomposition_IT20(sp_mass, sp_am_unit_vector):
 
     # Step (iv) in Section 2.2 Decomposition of IT20 #
     # Calculate the angular separation of each stellar particle from the centre of the densest grid cell #
-    Delta_theta = np.arccos(np.sin(delta_densest) * np.sin(np.arcsin(sp_am_unit_vector[:, 2])) + np.cos(delta_densest) * np.cos(
-        np.arcsin(sp_am_unit_vector[:, 2])) * np.cos(alpha_densest - np.arctan2(sp_am_unit_vector[:, 1], sp_am_unit_vector[:, 0])))  # In radians.
+    Delta_theta = np.arccos(np.sin(delta_densest) * np.sin(np.radians(delta)) + np.cos(delta_densest) * np.cos(np.radians(delta)) * np.cos(
+        alpha_densest - np.radians(alpha)))  # In radians.
 
     # Step (v) in Section 2.2 Decomposition of IT20 #
     # Calculate the disc mass fraction as the mass within 30 degrees from the densest grid cell #
